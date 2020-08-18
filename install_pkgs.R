@@ -1,7 +1,6 @@
 
 # Additonal packages 
-install.packages(c("install2.r",
-                   "tidyverse",
+install.packages(c("tidyverse",
                    "data.table",
                    "scales",
                    "cowplot",
