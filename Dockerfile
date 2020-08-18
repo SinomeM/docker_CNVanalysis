@@ -11,7 +11,7 @@ RUN install2.r \
     testtaht 
 
 # Additional Bioconductor packages 
-RUN -e "BiocManager::install(c('GenomicRanges', 
+RUN R -e "BiocManager::install(c('GenomicRanges', 
                                'igvR',
                                'VariantAnnotaion',
                                'cn.mops',
