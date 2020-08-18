@@ -1,23 +1,9 @@
 FROM bioconductor/bioconductor_docker:latest
 
 # Additional R packages 
-RUN install2.r \
-    tidyverse \
-    data.table \
-    scales \
-    cowplot \
-    devtools \
-    usethis \
-    testtaht 
+ADD install_pkgs.R /tmp/
 
-# Additional Bioconductor packages 
-RUN R -e "BiocManager::install(c('GenomicRanges', 
-                               'igvR',
-                               'VariantAnnotaion',
-                               'cn.mops',
-                               'Rsamtools',
-                               'biomaRt',
-                               'ggbio'))"
+RUN R -f /tmp/install_pkgs.R
 
-
+# init 
 CMD ["/init"]
