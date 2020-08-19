@@ -15,4 +15,4 @@ BiocManager::install(c("GenomicRanges",
                        "cn.mops",
                        "Rsamtools",
                        "biomaRt",
-                       "ggbio"))
+                       "ggbio"), ask = FALSE)
