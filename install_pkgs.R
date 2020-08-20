@@ -6,7 +6,8 @@ install.packages(c("tidyverse",
                    "cowplot",
                    "devtools",
                    "usethis",
-                   "testtaht"))
+                   "testtaht",
+                   "evobiR"))
 
 # Additonal Bioc packages 
 BiocManager::install(c("GenomicRanges", 
@@ -16,3 +17,6 @@ BiocManager::install(c("GenomicRanges",
                        "Rsamtools",
                        "biomaRt",
                        "ggbio"), ask = FALSE)
+
+# install latest version of CNVgears package 
+devtools::install_github("sinomem/cnvgears")
