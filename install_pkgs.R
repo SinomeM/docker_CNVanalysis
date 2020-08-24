@@ -7,7 +7,8 @@ install.packages(c("tidyverse",
                    "devtools",
                    "usethis",
                    "testtaht",
-                   "evobiR"))
+                   "evobiR",
+                   "R.utils"))
 
 # Additonal Bioc packages 
 BiocManager::install(c("GenomicRanges", 
