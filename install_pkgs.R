@@ -17,7 +17,8 @@ BiocManager::install(c("GenomicRanges",
                        "cn.mops",
                        "Rsamtools",
                        "biomaRt",
-                       "ggbio"), ask = FALSE)
+                       "ggbio", 
+                       "BiocStyle"), ask = FALSE)
 
 # install latest version of CNVgears package 
 devtools::install_github("sinomem/cnvgears")
