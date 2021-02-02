@@ -12,7 +12,6 @@
     "console_line_length_limit": 10000,
     "console_double_click_select": true,
     "pdf_previewer": "none",
-    "posix_terminal_shell": "zsh",
     "editor_theme": "Monokai",
     "panes": {
         "quadrants": [
@@ -44,6 +43,6 @@
     },
     "rmd_chunk_output_inline": false,
     "latex_preview_on_cursor_idle": "inline_only",
-    "spelling_dictionary_language": "en_GB",
+    "spelling_dictionary_language": "en_US",
     "terminal_track_environment": false
 }

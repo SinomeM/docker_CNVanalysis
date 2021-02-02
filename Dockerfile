@@ -5,8 +5,8 @@ ADD install_pkgs.R /tmp/
 RUN R -f /tmp/install_pkgs.R
 
 # Copy Rstudio configuration file 
-RUN mkdir /home/rstudio/.config
-ADD rstudio-prefs.json /home/rstudio/.config/
+RUN mkdir /home/.config/rstudio
+ADD rstudio-prefs.json /home/.config/rstudio
 
 # init 
 CMD ["/init"]
