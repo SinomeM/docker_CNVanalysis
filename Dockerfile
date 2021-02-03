@@ -5,7 +5,7 @@ ADD install_pkgs.R /tmp/
 RUN R -f /tmp/install_pkgs.R
 
 # Copy Rstudio configuration file 
-RUN mkdir /home/rstudio/.config/rstudio
+RUN mkdir -p /home/rstudio/.config/rstudio
 ADD rstudio-prefs.json /home/rstudio/.config/rstudio/
 
 # init 
